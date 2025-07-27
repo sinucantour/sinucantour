@@ -124,11 +124,32 @@ console.log('JavaScript cargado');
 console.log(`Tabs encontrados: ${tabs.length}`);
 console.log(`Contents encontrados: ${contents.length}`);
 
-// food
-function ordenarPorWhatsApp(producto) {
-  const numero = "573235882174"; // Tu número de WhatsApp
-  const mensaje = `Hola, quiero ordenar el siguiente producto de SinucanFOOD: ${producto}`;
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, "_blank");
+// Generar automáticamente cantidades del 1 al 100
+document.querySelectorAll('.cantidad-select').forEach(select => {
+  for (let i = 1; i <= 100; i++) {
+    const option = document.createElement('option');
+    option.value = i;
+    option.textContent = i;
+    select.appendChild(option);
+  }
+});
+
+// Actualiza el total en pantalla
+function actualizarTotal(select) {
+  const cantidad = parseInt(select.value);
+  const precio = parseInt(select.dataset.precio);
+  const total = cantidad * precio;
+  const totalElement = select.closest('.food-options').querySelector('.total');
+  totalElement.textContent = `Total: $${total.toLocaleString()}`;
+}
+
+// Botón "Seleccionar" redirige a WhatsApp con producto, cantidad y total
+function ordenarPorWhatsApp(producto, boton) {
+  const cantidad = parseInt(boton.parentElement.querySelector('.cantidad-select').value);
+  const precio = parseInt(boton.parentElement.querySelector('.cantidad-select').dataset.precio);
+  const total = cantidad * precio;
+  const mensaje = `¡Hola! Quiero pedir ${cantidad} unidad(es) de: ${producto}\nTotal: $${total.toLocaleString()} COP`;
+  const url = `https://wa.me/573235882174?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
 }
 
