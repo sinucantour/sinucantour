@@ -123,3 +123,12 @@ banner.addEventListener('mouseleave', () => {
 console.log('JavaScript cargado');
 console.log(`Tabs encontrados: ${tabs.length}`);
 console.log(`Contents encontrados: ${contents.length}`);
+
+// food
+function ordenarPorWhatsApp(producto) {
+  const numero = "573235882174"; // Tu número de WhatsApp
+  const mensaje = `Hola, quiero ordenar el siguiente producto de SinucanFOOD: ${producto}`;
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+}
+
