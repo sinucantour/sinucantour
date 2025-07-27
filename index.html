@@ -155,7 +155,13 @@
       <h3>Helado de Banano</h3>
       <p>100% natural, sin azúcar ni lácteos. Ideal para días calurosos.</p>
       <span class="price">$7.000</span>
-      <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Banano')">Seleccionar</button>
+      <div class="food-options">
+        <label>Cantidad:
+          <select class="cantidad-select" data-precio="7000" onchange="actualizarTotal(this)"></select>
+        </label>
+        <p class="total">Total: $7.000</p>
+        <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Banano', this)">Seleccionar</button>
+      </div>
     </div>
 
     <!-- Producto 2 -->
@@ -164,7 +170,13 @@
       <h3>Galletas de Avena & Manzana</h3>
       <p>Ricas en fibra, perfectas como premio después de un paseo.</p>
       <span class="price">$6.000</span>
-      <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Avena y Manzana')">Seleccionar</button>
+      <div class="food-options">
+        <label>Cantidad:
+          <select class="cantidad-select" data-precio="6000" onchange="actualizarTotal(this)"></select>
+        </label>
+        <p class="total">Total: $6.000</p>
+        <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Avena y Manzana', this)">Seleccionar</button>
+      </div>
     </div>
 
     <!-- Producto 3 -->
@@ -173,7 +185,13 @@
       <h3>Helado de Maní</h3>
       <p>Con mantequilla de maní natural. ¡Les encanta!</p>
       <span class="price">$8.000</span>
-      <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Maní')">Seleccionar</button>
+      <div class="food-options">
+        <label>Cantidad:
+          <select class="cantidad-select" data-precio="8000" onchange="actualizarTotal(this)"></select>
+        </label>
+        <p class="total">Total: $8.000</p>
+        <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Maní', this)">Seleccionar</button>
+      </div>
     </div>
 
     <!-- Producto 4 -->
@@ -182,9 +200,37 @@
       <h3>Galletas de Zanahoria</h3>
       <p>Ricas en vitamina A. Textura crujiente y deliciosa.</p>
       <span class="price">$6.500</span>
-      <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Zanahoria')">Seleccionar</button>
+      <div class="food-options">
+        <label>Cantidad:
+          <select class="cantidad-select" data-precio="6500" onchange="actualizarTotal(this)"></select>
+        </label>
+        <p class="total">Total: $6.500</p>
+        <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Zanahoria', this)">Seleccionar</button>
+      </div>
     </div>
   </div>
+
+  <section class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <ul>
+      <li><strong>¿Los productos necesitan refrigeración?</strong><br>Sí, especialmente los helados. Te los entregamos congelados.</li>
+      <li><strong>¿Son aptos para perros pequeños?</strong><br>Sí, tenemos porciones ideales para todos los tamaños.</li>
+    </ul>
+  </section>
+</section>
+
+
+  <section class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <ul>
+      <li><strong>¿Los productos necesitan refrigeración?</strong><br>Sí, especialmente los helados. Te los entregamos congelados.</li>
+      <li><strong>¿Son aptos para perros pequeños?</strong><br>Sí, tenemos porciones ideales para todos los tamaños.</li>
+    </ul>
+  </section>
+</section>
+
+
+
 </section>
 
 <!-- Sección de Contacto -->
