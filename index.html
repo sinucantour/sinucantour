@@ -1,276 +1,583 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SinucanTOUR - Montería</title>
-    <link rel="stylesheet" href="sinucan.css">
-</head>
-<body>
+    <link rel="stylesheet" href="sinucan.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo SinucanTOUR" class="logo-img" />
-                <img src="img/nombre.png" alt="Nombre del negocio" class="nombre">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#quienes-somos" class="active" data-tab="quienes-somos">Quiénes Somos</a></li>
-                <li><a href="#servicios" data-tab="servicios">Servicios</a></li>
-                
-<li><a href="#food" data-tab="food">FOOD</a></li>
+      <nav class="nav-container">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo SinucanTOUR" class="logo-img" />
+          <img src="img/nombre.png" alt="Nombre del negocio" class="nombre" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#quienes-somos" class="active" data-tab="quienes-somos"
+              >Quiénes Somos</a
+            >
+          </li>
+          <li><a href="#servicios" data-tab="servicios">Servicios</a></li>
 
-                <li><a href="#contacto" data-tab="contacto">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">☰</div>
-        </nav>
+          <li><a href="#food" data-tab="food">FOOD</a></li>
+
+          <li><a href="#contacto" data-tab="contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+      </nav>
     </header>
 
     <main>
-        <section id="quienes-somos" class="tab-content active">
-            <div class="banner">
-                <div class="slides" id="slides">
-                    <img src="img/foto1.jpg" alt="Perro 1">
-                    <img src="img/foto2.jpg" alt="Perro 2">
-                    <img src="img/foto3.jpg" alt="Perro 3">
-                </div>
-                <button class="prev-slide" onclick="prevSlide()">◄</button>
-                <button class="next-slide" onclick="nextSlide()">►</button>
-            </div>
-            <div class="mi-historia">
-                <h3>Mi Historia</h3>
-                <p>SinucanTOUR nació como un trabajo para ayudarme a pagar mis estudios universitarios en ingeniería de sistemas. Con el tiempo, descubrí que no solo me permitía cubrir mis gastos, sino que también disfrutaba pasar tiempo con los perritos, algo que siempre me ha apasionado.</p>
-                <p>A medida que fui creciendo en este negocio, entendí que podía hacer mucho más que solo paseos. Vi la oportunidad de ayudar a los perritos callejeros a través de mi empresa. Como futuro ingeniero de sistemas, quiero aplicar mis conocimientos para digitalizar y automatizar SinucanTOUR, mejorando el servicio y diferenciándome de la competencia.</p>
-                <p>Mi meta es convertir SinucanTOUR en una empresa innovadora que brinde un servicio confiable y, en el futuro, crear una fundación para rescatar y cuidar a los perros sin hogar. SinucanTOUR es más que un negocio, es mi manera de hacer lo que amo y contribuir al bienestar animal.</p>
-            </div>
-            <div class="section">
-                <h2>¿Por qué SinucanTOUR?</h2>
-                <p>Somos un equipo apasionado por los perros, con sede en Montería, dedicado a ofrecer paseos que no solo ejercitan a tu mascota, sino que también enriquecen su vida social y emocional. Con rutas cuidadosamente planeadas y un enfoque en la seguridad, llevamos más de 3 años haciendo felices a los peludos de nuestra comunidad.</p>
-                <p>Creemos que cada perro merece explorar el mundo a su propio ritmo, ya sea corriendo libremente en un parque o socializando con nuevos amigos. Nuestro servicio está diseñado para adaptarse a las necesidades únicas de tu compañero canino.</p>
-            </div>
-            <div class="section">
-                <h3>Visión</h3>
-                <p>Ser la empresa líder en paseos caninos en Montería y expandirnos a otras ciudades, ofreciendo un servicio confiable, profesional y digitalizado. Buscamos transformar la industria del cuidado canino, generando empleo formal y promoviendo el bienestar animal. A futuro, queremos crear una fundación para rescatar, rehabilitar y dar en adopción a perros callejeros, brindándoles una segunda oportunidad.</p>
-            </div>
-            <div class="section">
-                <h3>Misión</h3>
-                <p>Brindar un servicio de paseos caninos de alta calidad, asegurando el bienestar, seguridad y felicidad de cada perro. Nos diferenciamos por nuestra profesionalización, confianza y el uso de la tecnología para mejorar la experiencia de nuestros clientes. Además, fomentamos el amor y respeto por los animales, con el compromiso de contribuir en el futuro a la protección de los perros en situación de calle.</p>
-            </div>
-            <div class="section">
-                <h3>Nuestra Filosofía</h3>
-                <p>Creemos que los paseos son más que caminar: son oportunidades para que tu perro descubra el mundo, fortalezca su confianza y cree lazos con otros perros y personas. Por eso, cada paseo incluye momentos de juego, descanso y exploración guiada.</p>
-                <p>Trabajamos con perros de todas las edades y tamaños, desde cachorros curiosos hasta seniors que prefieren un ritmo más tranquilo. ¡En SinucanTOUR, todos tienen su lugar!</p>
-            </div>
-            <div class="cta">
-                <button class="btn-paw" onclick="updateTab(1)">Conoce nuestros planes</button>
-            </div>
-            <footer>
-                <div class="footer-content">
-                    <h3>SinucanTOUR</h3>
-                    <p>"Un perro feliz es un compañero leal para toda la vida."</p>
-                    <p>📍 Calle 45 #12-34, Montería, Córdoba | 📞 +57 311 648 4221</p>
-                    <p>✉️ sinucan.oficial@gmail.com | Horario: Lunes a Sábado, 7:00 AM - 6:00 PM</p>
-                    <p>© 2025 SinucanTOUR</p>
-                </div>
-            </footer>
-        </section>
+      <section id="quienes-somos" class="tab-content active">
+        <div class="banner">
+          <div class="slides" id="slides">
+            <img src="img/foto1.jpg" alt="Perro 1" />
+            <img src="img/foto2.jpg" alt="Perro 2" />
+            <img src="img/foto3.jpg" alt="Perro 3" />
+          </div>
+          <button class="prev-slide" onclick="prevSlide()">◄</button>
+          <button class="next-slide" onclick="nextSlide()">►</button>
+        </div>
+        <div class="mi-historia">
+          <h3>Mi Historia</h3>
+          <p>
+            SinucanTOUR nació como un trabajo para ayudarme a pagar mis estudios
+            universitarios en ingeniería de sistemas. Con el tiempo, descubrí
+            que no solo me permitía cubrir mis gastos, sino que también
+            disfrutaba pasar tiempo con los perritos, algo que siempre me ha
+            apasionado.
+          </p>
+          <p>
+            A medida que fui creciendo en este negocio, entendí que podía hacer
+            mucho más que solo paseos. Vi la oportunidad de ayudar a los
+            perritos callejeros a través de mi empresa. Como futuro ingeniero de
+            sistemas, quiero aplicar mis conocimientos para digitalizar y
+            automatizar SinucanTOUR, mejorando el servicio y diferenciándome de
+            la competencia.
+          </p>
+          <p>
+            Mi meta es convertir SinucanTOUR en una empresa innovadora que
+            brinde un servicio confiable y, en el futuro, crear una fundación
+            para rescatar y cuidar a los perros sin hogar. SinucanTOUR es más
+            que un negocio, es mi manera de hacer lo que amo y contribuir al
+            bienestar animal.
+          </p>
+        </div>
+        <div class="section">
+          <h2>¿Por qué SinucanTOUR?</h2>
+          <p>
+            Somos un equipo apasionado por los perros, con sede en Montería,
+            dedicado a ofrecer paseos que no solo ejercitan a tu mascota, sino
+            que también enriquecen su vida social y emocional. Con rutas
+            cuidadosamente planeadas y un enfoque en la seguridad, llevamos más
+            de 3 años haciendo felices a los peludos de nuestra comunidad.
+          </p>
+          <p>
+            Creemos que cada perro merece explorar el mundo a su propio ritmo,
+            ya sea corriendo libremente en un parque o socializando con nuevos
+            amigos. Nuestro servicio está diseñado para adaptarse a las
+            necesidades únicas de tu compañero canino.
+          </p>
+        </div>
+        <div class="section">
+          <h3>Visión</h3>
+          <p>
+            Ser la empresa líder en paseos caninos en Montería y expandirnos a
+            otras ciudades, ofreciendo un servicio confiable, profesional y
+            digitalizado. Buscamos transformar la industria del cuidado canino,
+            generando empleo formal y promoviendo el bienestar animal. A futuro,
+            queremos crear una fundación para rescatar, rehabilitar y dar en
+            adopción a perros callejeros, brindándoles una segunda oportunidad.
+          </p>
+        </div>
+        <div class="section">
+          <h3>Misión</h3>
+          <p>
+            Brindar un servicio de paseos caninos de alta calidad, asegurando el
+            bienestar, seguridad y felicidad de cada perro. Nos diferenciamos
+            por nuestra profesionalización, confianza y el uso de la tecnología
+            para mejorar la experiencia de nuestros clientes. Además, fomentamos
+            el amor y respeto por los animales, con el compromiso de contribuir
+            en el futuro a la protección de los perros en situación de calle.
+          </p>
+        </div>
+        <div class="section">
+          <h3>Nuestra Filosofía</h3>
+          <p>
+            Creemos que los paseos son más que caminar: son oportunidades para
+            que tu perro descubra el mundo, fortalezca su confianza y cree lazos
+            con otros perros y personas. Por eso, cada paseo incluye momentos de
+            juego, descanso y exploración guiada.
+          </p>
+          <p>
+            Trabajamos con perros de todas las edades y tamaños, desde cachorros
+            curiosos hasta seniors que prefieren un ritmo más tranquilo. ¡En
+            SinucanTOUR, todos tienen su lugar!
+          </p>
+        </div>
+        <div class="cta">
+          <button class="btn-paw" onclick="updateTab(1)">
+            Conoce nuestros planes
+          </button>
+        </div>
+        <footer>
+          <div class="footer-content">
+            <h3>SinucanTOUR</h3>
+            <p>"Un perro feliz es un compañero leal para toda la vida."</p>
+            <p>📍 Calle 45 #12-34, Montería, Córdoba | 📞 +57 311 648 4221</p>
+            <p>
+              ✉️ sinucan.oficial@gmail.com | Horario: Lunes a Sábado, 7:00 AM -
+              6:00 PM
+            </p>
+            <p>© 2025 SinucanTOUR</p>
+          </div>
+        </footer>
+      </section>
 
       <section id="servicios" class="tab-content">
-  <div class="section">
-    <h2>Planes y Precios</h2>
-    <p>Escoge el plan perfecto para tu peludo. Todos nuestros paseos incluyen seguridad, amor y diversión garantizada.</p>
-  </div>
+        <div class="section">
+          <h2>Planes y Precios</h2>
+          <p>
+            Escoge el plan perfecto para tu peludo. Todos nuestros paseos
+            incluyen seguridad, amor y diversión garantizada.
+          </p>
+        </div>
 
-  <div class="section servicio-plan">
-    <!-- Plan Básico -->
-    <div class="servicio">
-      <h3>Plan Básico <span class="paw-icon">🐾</span></h3>
-      <p>Ideal para perros tranquilos que necesitan ejercicio moderado.</p>
-      <span>30 min: $150.000 (1 paseo/día) / $200.000 (2 paseos/día)</span>
-      <span>45 min: $180.000 (1 paseo/día) / $260.000 (2 paseos/día)</span>
-      <span>1 hora: $210.000 (1 paseo/día) / $280.000 (2 paseos/día)</span>
-      <ul>
-        <li>Paseos en grupo</li>
-        <li>Recogida y entrega en casa</li>
-      </ul>
-      <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
-    </div>
+        <div class="section servicio-plan">
+          <!-- Plan Básico -->
+          <div class="servicio">
+            <h3>Plan Básico <span class="paw-icon">🐾</span></h3>
+            <p>
+              Ideal para perros tranquilos que necesitan ejercicio moderado.
+            </p>
+            <span
+              >30 min: $150.000 (1 paseo/día) / $200.000 (2 paseos/día)</span
+            >
+            <span
+              >45 min: $180.000 (1 paseo/día) / $260.000 (2 paseos/día)</span
+            >
+            <span
+              >1 hora: $210.000 (1 paseo/día) / $280.000 (2 paseos/día)</span
+            >
+            <ul>
+              <li>Paseos en grupo</li>
+              <li>Recogida y entrega en casa</li>
+            </ul>
+            <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
+          </div>
 
-    <!-- Plan Plus -->
-    <div class="servicio">
-      <h3>Plan Plus <span class="paw-icon">🐾</span></h3>
-      <p>Perfecto para perros enérgicos con más estímulo y cuidados extra.</p>
-      <span>30 min: $200.000 / $270.000</span>
-      <span>45 min: $230.000 / $320.000</span>
-      <span>1 hora: $260.000 / $350.000</span>
-      <ul>
-        <li>Todo lo del Plan Básico y Premium</li>
-        <li>Juegos personalizados y sesión de fotos</li>
-        <li>Hidratación especial en días calurosos</li>
-        <li>1 baño seco al mes</li>
-      </ul>
-      <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
-    </div>
+          <!-- Plan Plus -->
+          <div class="servicio">
+            <h3>Plan Plus <span class="paw-icon">🐾</span></h3>
+            <p>
+              Perfecto para perros enérgicos con más estímulo y cuidados extra.
+            </p>
+            <span>30 min: $200.000 / $270.000</span>
+            <span>45 min: $230.000 / $320.000</span>
+            <span>1 hora: $260.000 / $350.000</span>
+            <ul>
+              <li>Todo lo del Plan Básico y Premium</li>
+              <li>Juegos personalizados y sesión de fotos</li>
+              <li>Hidratación especial en días calurosos</li>
+              <li>1 baño seco al mes</li>
+            </ul>
+            <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
+          </div>
 
-    <!-- Plan Premium -->
-    <div class="servicio">
-      <h3>Plan Premium <span class="paw-icon">🐾</span></h3>
-      <p>Para perros sociables y activos que necesitan paseos largos y cuidados adicionales.</p>
-      <span>30 min: $180.000 / $240.000</span>
-      <span>45 min: $210.000 / $290.000</span>
-      <span>1 hora: $240.000 / $310.000</span>
-      <ul>
-        <li>Todo lo del Plan Básico</li>
-        <li>Agua fresca + premios por paseo</li>
-        <li>Socialización + obediencia básica</li>
-      </ul>
-      <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
-    </div>
-  </div>
+          <!-- Plan Premium -->
+          <div class="servicio">
+            <h3>Plan Premium <span class="paw-icon">🐾</span></h3>
+            <p>
+              Para perros sociables y activos que necesitan paseos largos y
+              cuidados adicionales.
+            </p>
+            <span>30 min: $180.000 / $240.000</span>
+            <span>45 min: $210.000 / $290.000</span>
+            <span>1 hora: $240.000 / $310.000</span>
+            <ul>
+              <li>Todo lo del Plan Básico</li>
+              <li>Agua fresca + premios por paseo</li>
+              <li>Socialización + obediencia básica</li>
+            </ul>
+            <button class="btn-paw" onclick="updateTab(2)">Seleccionar</button>
+          </div>
+        </div>
 
-  <div class="section">
-    <h3>Beneficios</h3>
-    <p>Mejor comportamiento, menos ansiedad, más felicidad para tu peludo. ¡Y tranquilidad para ti!</p>
-  </div>
+        <div class="section">
+          <h3>Beneficios</h3>
+          <p>
+            Mejor comportamiento, menos ansiedad, más felicidad para tu peludo.
+            ¡Y tranquilidad para ti!
+          </p>
+        </div>
 
-  <div class="section">
-    <h3>Incluye Todos los Planes</h3>
-    <ul>
-      <li>Paseadores capacitados</li>
-      <li>Rutas seguras en Montería</li>
-      <li>Reportes opcionales y contacto directo</li>
-    </ul>
-  </div>
-</section>
+        <div class="section">
+          <h3>Incluye Todos los Planes</h3>
+          <ul>
+            <li>Paseadores capacitados</li>
+            <li>Rutas seguras en Montería</li>
+            <li>Reportes opcionales y contacto directo</li>
+          </ul>
+        </div>
+      </section>
 
-<section id="food" class="tab-content">
-  <div class="section">
-    <h2>Snacks y Helados Naturales para Perros</h2>
-    <p>Deliciosos y saludables. Premia a tu peludo con lo mejor 🐶🍦</p>
-  </div>
+      <!-- ================== INICIO SECCIÓN FOOD ================== -->
+      <section id="food" class="tab-content">
+        <div class="section">
+          <h2>Snacks y Helados Naturales para Perros</h2>
+          <p>
+            "Nuestros snacks y helados naturales para perros están hechos con
+            ingredientes frescos, sin azúcares ni conservantes, ideales para
+            cuidar la salud y felicidad de tu peludo. 🐶🥕🍌 Cada bocado es
+            nutritivo, delicioso y perfecto para consentirlo en cualquier
+            momento del día. 🍦🦴❤️"
+          </p>
+        </div>
 
-  <div class="food-grid">
-    <!-- Producto 1 -->
-    <div class="food-item">
-      <img src="img/helado1.jpeg" alt="Helado de Banano">
-      <h3>Helado de Banano</h3>
-      <p>100% natural, sin azúcar ni lácteos.</p>
-      <span class="price">$7.000</span>
-      <label>Cantidad:</label>
-      <select class="cantidad-select" onchange="actualizarTotal(this)">
-        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
-      </select>
-      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="food-item">
-      <img src="img/galletas1.jpeg" alt="Galletas de Avena y Manzana">
-      <h3>Galletas de Avena & Manzana</h3>
-      <p>Ricas en fibra, perfectas como premio.</p>
-      <span class="price">$6.000</span>
-      <label>Cantidad:</label>
-      <select class="cantidad-select" onchange="actualizarTotal(this)">
-        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
-      </select>
-      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
-    </div>
-
-    <!-- Producto 3 -->
-    <div class="food-item">
-      <img src="img/helado2.jpg" alt="Helado de Maní">
-      <h3>Helado de Maní</h3>
-      <p>Con mantequilla de maní natural.</p>
-      <span class="price">$8.000</span>
-      <label>Cantidad:</label>
-      <select class="cantidad-select" onchange="actualizarTotal(this)">
-        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
-      </select>
-      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
-    </div>
-  </div>
-
-  <!-- Carrito al final de la sección FOOD -->
-  <div id="carrito-bloque" class="carrito-food">
-    <h3>Resumen de tu pedido</h3>
-    <ul id="carrito-lista"></ul>
-    <p id="total-pedido">Total: $0</p>
-    <button class="btn-paw" onclick="enviarPedidoWhatsApp()">Enviar pedido por WhatsApp</button>
-  </div>
-
-  <!-- Carrito flotante -->
-  <div id="carrito-flotante" class="carrito-icono" onclick="mostrarCarrito()">
-    🛒
-  </div>
-</section>
-<!-- Sección de Contacto -->
-        <section id="contacto" class="tab-content">
-            <div class="section">
-                <h2>Contáctanos</h2>
-                <p>Estamos aquí para ayudarte a que tu perro viva su mejor vida. Contáctanos para reservar un paseo, resolver dudas o unirte a nuestra comunidad canina en Montería.</p>
+        <div class="food-grid">
+          <!-- Producto 1 -->
+          <div class="food-item">
+            <img src="img/helado1.jpeg" alt="Helado de Banano" />
+            <h3>Helado de Banano</h3>
+            <p>100% natural, sin azúcar ni lácteos.</p>
+            <span class="price" data-precio="7000">$7.000</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
             </div>
-            <div class="section">
-                <form action="https://formsubmit.co/javierdress02@gmail.com" method="POST" id="contact-form">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://sinucantour.github.io/sinucantour/gracias.html">
+          </div>
 
-    <input type="text" name="nombre" placeholder="Nombre completo" required class="form-field">
-    <input type="email" name="correo" placeholder="Correo electrónico" required class="form-field">
-    <input type="tel" name="telefono" placeholder="Teléfono" required class="form-field">
-    
-    <select name="plan" required class="form-field">
-        <option value="" disabled selected>Selecciona un plan</option>
-        <option value="Básico">Básico</option>
-        <option value="Premium">Premium</option>
-        <option value="Plus">Plus</option>
-    </select>
-    
-    <textarea name="mensaje" placeholder="Cuéntanos sobre tu perro..." required class="form-field"></textarea>
-    <button type="submit" class="btn-paw">Enviar Mensaje</button>
-</form>
+          <!-- Producto 2 -->
+          <div class="food-item">
+            <img src="img/galletas1.jpeg" alt="Galletas de Avena & Manzana" />
+            <h3>Galletas de Avena & Manzana</h3>
+            <p>Ricas en fibra, perfectas como premio.</p>
+            <span class="price" data-precio="6000">$6.000</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
 
+          <!-- Producto 3 -->
+          <div class="food-item">
+            <img src="img/helado2.jpg" alt="Helado de Maní" />
+            <h3>Helado de Maní</h3>
+            <p>Con mantequilla de maní natural. ¡Les encanta!</p>
+            <span class="price" data-precio="8000">$8.000</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
 
+          <!-- Producto 4 -->
+          <div class="food-item">
+            <img src="img/galletas2.jpeg" alt="Galletas de Zanahoria" />
+            <h3>Galletas de Zanahoria</h3>
+            <p>Ricas en vitamina A y textura crujiente.</p>
+            <span class="price" data-precio="6500">$6.500</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
             </div>
-            <div class="section contact-info">
-                <h3>Encuéntranos en Montería</h3>
-                <p>📍 Calle 45 #12-34, Barrio El Recreo, Montería, Córdoba, Colombia</p>
-                <p>📞 +57 311 648 4221 (WhatsApp disponible)</p>
-                <p>✉️ sinucan.oficial@gmail.com</p>
-                <p>Horario de atención: Lunes a Sábado, 7:00 AM - 6:00 PM | Domingos previa cita</p>
-            </div>
-            <div class="section extra-info">
-                <h3>Preguntas Frecuentes</h3>
-                <p><strong>¿Qué pasa si llueve?</strong> Reprogramamos el paseo o lo adaptamos a zonas cubiertas.</p>
-                <p><strong>¿Aceptan perros con necesidades especiales?</strong> ¡Claro! Contáctanos para personalizar su experiencia.</p>
-                <p><strong>¿Cómo reservo?</strong> Llena el formulario o llámanos directamente.</p>
-            </div>
-            <div class="section social-links">
-                <p>Síguenos para ver fotos y eventos:</p>
-                <a href="#" class="social-btn">Facebook</a>
-                <a href="https://www.instagram.com/sinucan_?igsh=d21yZXg4ZmNwN2Nh" class="social-btn" target="_blank">Instagram</a>
-                <a href="https://wa.me/573235882174?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20paseos%20caninos" class="social-btn" target="_blank">
-  WhatsApp
-</a>
+          </div>
 
+          <!-- Producto 5 -->
+          <div class="food-item">
+            <img src="img/helado3.jpeg" alt="Helado de Fresa" />
+            <h3>Helado de Fresa</h3>
+            <p>Natural y refrescante con trozos de fruta.</p>
+            <span class="price" data-precio="7500">$7.500</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
             </div>
-            <footer>
-                <div class="footer-content">
-                    <h3>SinucanTOUR</h3>
-                    <p>"Un perro mueve la cola con el corazón, y nosotros lo cuidamos con el nuestro."</p>
-                    <p>📍 Calle 45 #12-34, Montería, Córdoba | 📞 +57 311 648 4221</p>
-                    <p>✉️ sinucan.oficial@gmail.com | Horario: Lunes a Sábado, 7:00 AM - 6:00 PM</p>
-                    <p>© 2025 SinucanTOUR</p>
-                </div>
-            </footer>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="food-item">
+            <img src="img/galletas3.jpeg" alt="Galletas de Calabaza" />
+            <h3>Galletas de Calabaza</h3>
+            <p>Suaves y nutritivas, perfectas para cachorros.</p>
+            <span class="price" data-precio="7000">$7.000</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="food-item">
+            <img src="img/helado4.jpeg" alt="Helado de Yogur con Frutas" />
+            <h3>Helado de Yogur con Frutas</h3>
+            <p>Refrescante y lleno de probióticos.</p>
+            <span class="price" data-precio="8500">$8.500</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 8 -->
+          <div class="food-item">
+            <img src="img/galletas4.jpeg" alt="Galletas de Coco" />
+            <h3>Galletas de Coco</h3>
+            <p>Deliciosas y con aceite de coco saludable.</p>
+            <span class="price" data-precio="6800">$6.800</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 9 -->
+          <div class="food-item">
+            <img src="img/helado5.jpeg" alt="Helado de Mango" />
+            <h3>Helado de Mango</h3>
+            <p>Refrescante y lleno de vitaminas.</p>
+            <span class="price" data-precio="7800">$7.800</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
+
+          <!-- Producto 10 -->
+          <div class="food-item">
+            <img src="img/galletas5.jpeg" alt="Galletas de Espinaca" />
+            <h3>Galletas de Espinaca</h3>
+            <p>Ricas en hierro y proteínas vegetales.</p>
+            <span class="price" data-precio="7200">$7.200</span>
+            <div class="food-options">
+              <select class="cantidad-select"></select>
+              <button class="btn-food" onclick="agregarAlCarrito(this)">
+                Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preguntas frecuentes -->
+        <section class="faq">
+          <h3>Preguntas frecuentes</h3>
+          <ul>
+            <li>
+              <strong>¿Los productos necesitan refrigeración?</strong> Sí,
+              especialmente los helados.
+            </li>
+            <li>
+              <strong>¿Hacen entregas a domicilio?</strong> Sí, en toda Montería
+              con costo adicional.
+            </li>
+            <li>
+              <strong>¿Qué formas de pago aceptan?</strong> Nequi y efectivo
+              contra entrega.
+            </li>
+            <li>
+              <strong>¿Los productos son 100% naturales?</strong> Sí, no
+              contienen conservantes.
+            </li>
+            <li>
+              <strong>¿Puedo personalizar mi pedido?</strong> Sí, contáctanos
+              por WhatsApp.
+            </li>
+            <li>
+              <strong>¿Cada cuánto producen?</strong> Preparamos fresco cada
+              semana.
+            </li>
+            <li>
+              <strong>¿Son aptos para perros pequeños?</strong> Sí, tenemos
+              porciones para todos los tamaños.
+            </li>
+          </ul>
         </section>
+
+        <!-- Footer -->
+        <footer class="footer-food">
+          <div class="footer-content">
+            <h3>SinucanFOOD</h3>
+            <p>Snacks y helados naturales para tu peludo.</p>
+            <p>📍 Montería, Córdoba | 📞 +57 323 588 2174</p>
+            <p>✉️ sinucan.oficial@gmail.com</p>
+          </div>
+        </footer>
+      </section>
+
+      <!-- ================== CARRITO FLOTANTE ================== -->
+      <div id="carrito-flotante">
+        <button id="carrito-boton" onclick="toggleCarrito()">
+          🛒 <span id="contador-carrito">0</span>
+        </button>
+        <div id="carrito-contenido">
+          <h3>🛒 Tu Carrito</h3>
+          <ul id="carrito-lista"></ul>
+          <p id="total-pedido">Total: $0</p>
+          <button id="finalizar-pedido" onclick="enviarPedidoWhatsApp()">
+            Finalizar compra
+          </button>
+        </div>
+      </div>
+      <!-- ================== FIN SECCIÓN FOOD ================== -->
+
+      <!-- Sección de Contacto -->
+      <section id="contacto" class="tab-content">
+        <div class="section">
+          <h2>Contáctanos</h2>
+          <p>
+            Estamos aquí para ayudarte a que tu perro viva su mejor vida.
+            Contáctanos para reservar un paseo, resolver dudas o unirte a
+            nuestra comunidad canina en Montería.
+          </p>
+        </div>
+        <div class="section">
+          <form
+            action="https://formsubmit.co/javierdress02@gmail.com"
+            method="POST"
+            id="contact-form"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://sinucantour.github.io/sinucantour/gracias.html"
+            />
+
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre completo"
+              required
+              class="form-field"
+            />
+            <input
+              type="email"
+              name="correo"
+              placeholder="Correo electrónico"
+              required
+              class="form-field"
+            />
+            <input
+              type="tel"
+              name="telefono"
+              placeholder="Teléfono"
+              required
+              class="form-field"
+            />
+
+            <select name="plan" required class="form-field">
+              <option value="" disabled selected>Selecciona un plan</option>
+              <option value="Básico">Básico</option>
+              <option value="Premium">Premium</option>
+              <option value="Plus">Plus</option>
+            </select>
+
+            <textarea
+              name="mensaje"
+              placeholder="Cuéntanos sobre tu perro..."
+              required
+              class="form-field"
+            ></textarea>
+            <button type="submit" class="btn-paw">Enviar Mensaje</button>
+          </form>
+        </div>
+        <div class="section contact-info">
+          <h3>Encuéntranos en Montería</h3>
+          <p>
+            📍 Calle 45 #12-34, Barrio El Recreo, Montería, Córdoba, Colombia
+          </p>
+          <p>📞 +57 311 648 4221 (WhatsApp disponible)</p>
+          <p>✉️ sinucan.oficial@gmail.com</p>
+          <p>
+            Horario de atención: Lunes a Sábado, 7:00 AM - 6:00 PM | Domingos
+            previa cita
+          </p>
+        </div>
+        <div class="section extra-info">
+          <h3>Preguntas Frecuentes</h3>
+          <p>
+            <strong>¿Qué pasa si llueve?</strong> Reprogramamos el paseo o lo
+            adaptamos a zonas cubiertas.
+          </p>
+          <p>
+            <strong>¿Aceptan perros con necesidades especiales?</strong> ¡Claro!
+            Contáctanos para personalizar su experiencia.
+          </p>
+          <p>
+            <strong>¿Cómo reservo?</strong> Llena el formulario o llámanos
+            directamente.
+          </p>
+        </div>
+        <div class="section social-links">
+          <p>Síguenos para ver fotos y eventos:</p>
+          <a href="#" class="social-btn">Facebook</a>
+          <a
+            href="https://www.instagram.com/sinucan_?igsh=d21yZXg4ZmNwN2Nh"
+            class="social-btn"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            href="https://wa.me/573235882174?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20paseos%20caninos"
+            class="social-btn"
+            target="_blank"
+          >
+            WhatsApp
+          </a>
+        </div>
+        <footer>
+          <div class="footer-content">
+            <h3>SinucanTOUR</h3>
+            <p>
+              "Un perro mueve la cola con el corazón, y nosotros lo cuidamos con
+              el nuestro."
+            </p>
+            <p>📍 Calle 45 #12-34, Montería, Córdoba | 📞 +57 311 648 4221</p>
+            <p>
+              ✉️ sinucan.oficial@gmail.com | Horario: Lunes a Sábado, 7:00 AM -
+              6:00 PM
+            </p>
+            <p>© 2025 SinucanTOUR</p>
+          </div>
+        </footer>
+      </section>
     </main>
 
     <div class="nav-buttons" id="nav-buttons">
-        <button class="scroll-btn" id="scroll-top" onclick="scrollToTop()">⬆ Arriba</button>
-        <button class="scroll-btn" id="scroll-bottom" onclick="scrollToBottom()">⬇ Abajo</button>
-        <button class="tab-btn" id="prev-tab" onclick="prevTab()">◄ Anterior</button>
-        <button class="tab-btn" id="next-tab" onclick="nextTab()">Siguiente ►</button>
+      <button class="scroll-btn" id="scroll-top" onclick="scrollToTop()">
+        ⬆ Arriba
+      </button>
+      <button class="scroll-btn" id="scroll-bottom" onclick="scrollToBottom()">
+        ⬇ Abajo
+      </button>
+      <button class="tab-btn" id="prev-tab" onclick="prevTab()">
+        ◄ Anterior
+      </button>
+      <button class="tab-btn" id="next-tab" onclick="nextTab()">
+        Siguiente ►
+      </button>
     </div>
 
     <script src="sinucan.js"></script>
-</body>
+  </body>
 </html>
