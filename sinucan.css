@@ -680,133 +680,111 @@ footer {
     }
 }
 
-/* ==== FOOD Section Styles ==== */
-#food .food-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+/* 📦 Estilo de FOOD */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  padding: 2rem;
 }
 
-#food .food-item {
-  background: #fff;
-  border: 2px solid #efac5b;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.food-item {
+  background: #ffffff;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
   padding: 1rem;
-  max-width: 300px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-#food .food-item:hover {
-  transform: scale(1.03);
+.food-item:hover {
+  transform: scale(1.05);
 }
 
-#food .food-item img {
-  width: 100%;
+.food-item img {
+  max-width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
-#food .price {
-  display: block;
-  font-size: 1.1rem;
-  color: #156871;
+.food-item h3 {
   margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.food-item p {
+  font-size: 0.9rem;
+  color: var(--medium-text-color);
+  margin: 0.5rem 0;
+}
+
+.food-item .price {
   font-weight: bold;
-}
-
-#food .cantidad-select {
-  margin-bottom: 0.5rem;
-  padding: 0.3rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-#food .btn-food {
-  background: #efac5b;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#food .btn-food:hover {
-  background: #156871;
-}
-
-#food .faq {
-  margin-top: 3rem;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#food .faq h3 {
-  color: #D17B46;
-  margin-bottom: 1rem;
-}
-
-#food .faq ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#food .faq li {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  #food .food-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #food .food-item {
-    width: 90%;
-  }
-}
-.food-options {
-  margin-top: 0.5rem;
+  color: var(--accent-color);
+  margin: 0.5rem 0;
 }
 
 .cantidad-select {
   padding: 0.4rem;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.total {
-  margin: 0.5rem 0;
-  font-weight: bold;
-  color: #156871;
+  margin-bottom: 0.8rem;
 }
 
 .btn-food {
-  padding: 0.6rem 1.2rem;
-  background-color: var(--accent-color);
-  color: white;
+  background: var(--primary-color);
+  color: #fff;
   border: none;
-  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s;
 }
 
 .btn-food:hover {
-  background-color: var(--primary-color);
-  transform: scale(1.05);
+  background: var(--accent-color);
 }
 
+/* Carrito */
+.carrito-icono {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+.carrito-food {
+  display: none;
+  background: #fff;
+  border: 2px dashed var(--primary-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.carrito-food.visible {
+  display: block;
+}
+
+.carrito-food ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito-food ul li {
+  margin-bottom: 0.5rem;
+}
+
+.carrito-food button {
+  margin-top: 1rem;
+}
