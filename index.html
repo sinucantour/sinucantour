@@ -151,88 +151,57 @@
   <div class="food-grid">
     <!-- Producto 1 -->
     <div class="food-item">
-      <img src="img/helado1.jpeg" alt="Helado de banano">
+      <img src="img/helado1.jpeg" alt="Helado de Banano">
       <h3>Helado de Banano</h3>
-      <p>100% natural, sin azúcar ni lácteos. Ideal para días calurosos.</p>
+      <p>100% natural, sin azúcar ni lácteos.</p>
       <span class="price">$7.000</span>
-      <div class="food-options">
-        <label>Cantidad:
-          <select class="cantidad-select" data-precio="7000" onchange="actualizarTotal(this)"></select>
-        </label>
-        <p class="total">Total: $7.000</p>
-        <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Banano', this)">Seleccionar</button>
-      </div>
+      <label>Cantidad:</label>
+      <select class="cantidad-select" onchange="actualizarTotal(this)">
+        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
+      </select>
+      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
     </div>
 
     <!-- Producto 2 -->
     <div class="food-item">
-      <img src="img/galletas1.jpeg" alt="Galletas de avena y manzana">
+      <img src="img/galletas1.jpeg" alt="Galletas de Avena y Manzana">
       <h3>Galletas de Avena & Manzana</h3>
-      <p>Ricas en fibra, perfectas como premio después de un paseo.</p>
+      <p>Ricas en fibra, perfectas como premio.</p>
       <span class="price">$6.000</span>
-      <div class="food-options">
-        <label>Cantidad:
-          <select class="cantidad-select" data-precio="6000" onchange="actualizarTotal(this)"></select>
-        </label>
-        <p class="total">Total: $6.000</p>
-        <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Avena y Manzana', this)">Seleccionar</button>
-      </div>
+      <label>Cantidad:</label>
+      <select class="cantidad-select" onchange="actualizarTotal(this)">
+        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
+      </select>
+      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
     </div>
 
     <!-- Producto 3 -->
     <div class="food-item">
-      <img src="img/helado2.jpg" alt="Helado de maní">
+      <img src="img/helado2.jpg" alt="Helado de Maní">
       <h3>Helado de Maní</h3>
-      <p>Con mantequilla de maní natural. ¡Les encanta!</p>
+      <p>Con mantequilla de maní natural.</p>
       <span class="price">$8.000</span>
-      <div class="food-options">
-        <label>Cantidad:
-          <select class="cantidad-select" data-precio="8000" onchange="actualizarTotal(this)"></select>
-        </label>
-        <p class="total">Total: $8.000</p>
-        <button class="btn-food" onclick="ordenarPorWhatsApp('Helado de Maní', this)">Seleccionar</button>
-      </div>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="food-item">
-      <img src="img/galletas2.jpeg" alt="Galletas de zanahoria">
-      <h3>Galletas de Zanahoria</h3>
-      <p>Ricas en vitamina A. Textura crujiente y deliciosa.</p>
-      <span class="price">$6.500</span>
-      <div class="food-options">
-        <label>Cantidad:
-          <select class="cantidad-select" data-precio="6500" onchange="actualizarTotal(this)"></select>
-        </label>
-        <p class="total">Total: $6.500</p>
-        <button class="btn-food" onclick="ordenarPorWhatsApp('Galletas de Zanahoria', this)">Seleccionar</button>
-      </div>
+      <label>Cantidad:</label>
+      <select class="cantidad-select" onchange="actualizarTotal(this)">
+        ${[...Array(100)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
+      </select>
+      <button class="btn-food" onclick="ordenarPorWhatsApp(this)">Seleccionar</button>
     </div>
   </div>
 
-  <section class="faq">
-    <h3>Preguntas frecuentes</h3>
-    <ul>
-      <li><strong>¿Los productos necesitan refrigeración?</strong><br>Sí, especialmente los helados. Te los entregamos congelados.</li>
-      <li><strong>¿Son aptos para perros pequeños?</strong><br>Sí, tenemos porciones ideales para todos los tamaños.</li>
-    </ul>
-  </section>
+  <!-- Carrito al final de la sección FOOD -->
+  <div id="carrito-bloque" class="carrito-food">
+    <h3>Resumen de tu pedido</h3>
+    <ul id="carrito-lista"></ul>
+    <p id="total-pedido">Total: $0</p>
+    <button class="btn-paw" onclick="enviarPedidoWhatsApp()">Enviar pedido por WhatsApp</button>
+  </div>
+
+  <!-- Carrito flotante -->
+  <div id="carrito-flotante" class="carrito-icono" onclick="mostrarCarrito()">
+    🛒
+  </div>
 </section>
-
-
-  <section class="faq">
-    <h3>Preguntas frecuentes</h3>
-    <ul>
-      <li><strong>¿Los productos necesitan refrigeración?</strong><br>Sí, especialmente los helados. Te los entregamos congelados.</li>
-      <li><strong>¿Son aptos para perros pequeños?</strong><br>Sí, tenemos porciones ideales para todos los tamaños.</li>
-    </ul>
-  </section>
-</section>
-
-
-
-</section>
-
 <!-- Sección de Contacto -->
         <section id="contacto" class="tab-content">
             <div class="section">
