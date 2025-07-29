@@ -152,4 +152,71 @@ function ordenarPorWhatsApp(producto, boton) {
   const url = `https://wa.me/573235882174?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
 }
+// 🛍️ Carrito de compras
+let carrito = [];
 
+function actualizarTotal(selectElement) {
+  const producto = selectElement.closest('.food-item');
+  const nombre = producto.querySelector('h3').innerText;
+  const precio = parseInt(producto.querySelector('.price').innerText.replace(/\D/g, ''));
+  const cantidad = parseInt(selectElement.value);
+
+  // Buscar si ya está en el carrito
+  const existente = carrito.find(item => item.nombre === nombre);
+  if (existente) {
+    existente.cantidad = cantidad;
+    existente.total = cantidad * precio;
+  } else {
+    carrito.push({ nombre, cantidad, total: cantidad * precio });
+  }
+
+  renderizarCarrito();
+}
+
+function renderizarCarrito() {
+  const lista = document.getElementById('carrito-lista');
+  const totalElement = document.getElementById('total-pedido');
+  lista.innerHTML = '';
+  let total = 0;
+
+  carrito.forEach(item => {
+    const li = document.createElement('li');
+    li.innerText = `${item.nombre} x ${item.cantidad} = $${item.total.toLocaleString()}`;
+    lista.appendChild(li);
+    total += item.total;
+  });
+
+  totalElement.innerText = `Total: $${total.toLocaleString()}`;
+}
+
+function mostrarCarrito() {
+  const bloque = document.getElementById('carrito-bloque');
+  bloque.classList.toggle('visible');
+}
+
+function ordenarPorWhatsApp(boton) {
+  const producto = boton.closest('.food-item');
+  const nombre = producto.querySelector('h3').innerText;
+  const precio = parseInt(producto.querySelector('.price').innerText.replace(/\D/g, ''));
+  const cantidad = parseInt(producto.querySelector('.cantidad-select').value);
+  const total = cantidad * precio;
+
+  const mensaje = `¡Hola! Quiero pedir ${cantidad} unidad(es) de: ${nombre} por un total de $${total.toLocaleString()}`;
+  const url = `https://wa.me/573235882174?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
+}
+
+function enviarPedidoWhatsApp() {
+  if (carrito.length === 0) return;
+
+  let mensaje = "¡Hola! Quiero hacer un pedido:\n\n";
+  carrito.forEach(item => {
+    mensaje += `🦴 ${item.nombre} x ${item.cantidad} = $${item.total.toLocaleString()}\n`;
+  });
+
+  const total = carrito.reduce((acc, item) => acc + item.total, 0);
+  mensaje += `\n🧾 Total: $${total.toLocaleString()}`;
+
+  const url = `https://wa.me/573235882174?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
+}
