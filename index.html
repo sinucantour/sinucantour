@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SinucanTOUR - Montería</title>
     <link rel="stylesheet" href="sinucan.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
   </head>
   <body>
     <header>
-      <nav class="nav-container">
-        <div class="logo">
-          <img src="img/logo.png" alt="Logo SinucanTOUR" class="logo-img" />
-          <img src="img/nombre.png" alt="Nombre del negocio" class="nombre" />
-        </div>
-        <ul class="nav-links">
-          <li>
-            <a href="#quienes-somos" class="active" data-tab="quienes-somos"
-              >Quiénes Somos</a
-            >
-          </li>
-          <li><a href="#servicios" data-tab="servicios">Servicios</a></li>
+  <nav class="nav-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo SinucanTOUR" class="logo-img" />
+      <img src="img/nombre.png" alt="Nombre del negocio" class="nombre">
+    </div>
 
-          <li><a href="#food" data-tab="food">FOOD</a></li>
+    <!-- Menú -->
+    <ul class="nav-links">
+      <li><a href="#quienes-somos" class="active" data-tab="quienes-somos">🐾 Quiénes Somos</a></li>
+      <li><a href="#servicios" data-tab="servicios">💼 Servicios</a></li>
+      <li><a href="#food" data-tab="food">🍪 FOOD</a></li>
+      <li><a href="#contacto" data-tab="contacto">📞 Contacto</a></li>
+    </ul>
 
-          <li><a href="#contacto" data-tab="contacto">Contacto</a></li>
-        </ul>
-        <div class="menu-toggle">☰</div>
-      </nav>
-    </header>
+    <!-- Botón de contacto (opcional) -->
+    <a href="https://wa.me/573235882174?text=Hola%2C%20quiero%20más%20información%20sobre%20SinucanTOUR"
+       target="_blank" class="btn-header">¡Escríbenos!</a>
+
+    <!-- Menú hamburguesa -->
+    <div class="menu-toggle">☰</div>
+  </nav>
+</header>
+
 
     <main>
       <section id="quienes-somos" class="tab-content active">
@@ -40,88 +48,47 @@
           <button class="prev-slide" onclick="prevSlide()">◄</button>
           <button class="next-slide" onclick="nextSlide()">►</button>
         </div>
-        <div class="mi-historia">
-          <h3>Mi Historia</h3>
-          <p>
-            SinucanTOUR nació como un trabajo para ayudarme a pagar mis estudios
-            universitarios en ingeniería de sistemas. Con el tiempo, descubrí
-            que no solo me permitía cubrir mis gastos, sino que también
-            disfrutaba pasar tiempo con los perritos, algo que siempre me ha
-            apasionado.
-          </p>
-          <p>
-            A medida que fui creciendo en este negocio, entendí que podía hacer
-            mucho más que solo paseos. Vi la oportunidad de ayudar a los
-            perritos callejeros a través de mi empresa. Como futuro ingeniero de
-            sistemas, quiero aplicar mis conocimientos para digitalizar y
-            automatizar SinucanTOUR, mejorando el servicio y diferenciándome de
-            la competencia.
-          </p>
-          <p>
-            Mi meta es convertir SinucanTOUR en una empresa innovadora que
-            brinde un servicio confiable y, en el futuro, crear una fundación
-            para rescatar y cuidar a los perros sin hogar. SinucanTOUR es más
-            que un negocio, es mi manera de hacer lo que amo y contribuir al
-            bienestar animal.
-          </p>
-        </div>
-        <div class="section">
-          <h2>¿Por qué SinucanTOUR?</h2>
-          <p>
-            Somos un equipo apasionado por los perros, con sede en Montería,
-            dedicado a ofrecer paseos que no solo ejercitan a tu mascota, sino
-            que también enriquecen su vida social y emocional. Con rutas
-            cuidadosamente planeadas y un enfoque en la seguridad, llevamos más
-            de 3 años haciendo felices a los peludos de nuestra comunidad.
-          </p>
-          <p>
-            Creemos que cada perro merece explorar el mundo a su propio ritmo,
-            ya sea corriendo libremente en un parque o socializando con nuevos
-            amigos. Nuestro servicio está diseñado para adaptarse a las
-            necesidades únicas de tu compañero canino.
-          </p>
-        </div>
-        <div class="section">
-          <h3>Visión</h3>
-          <p>
-            Ser la empresa líder en paseos caninos en Montería y expandirnos a
-            otras ciudades, ofreciendo un servicio confiable, profesional y
-            digitalizado. Buscamos transformar la industria del cuidado canino,
-            generando empleo formal y promoviendo el bienestar animal. A futuro,
-            queremos crear una fundación para rescatar, rehabilitar y dar en
-            adopción a perros callejeros, brindándoles una segunda oportunidad.
-          </p>
-        </div>
-        <div class="section">
-          <h3>Misión</h3>
-          <p>
-            Brindar un servicio de paseos caninos de alta calidad, asegurando el
-            bienestar, seguridad y felicidad de cada perro. Nos diferenciamos
-            por nuestra profesionalización, confianza y el uso de la tecnología
-            para mejorar la experiencia de nuestros clientes. Además, fomentamos
-            el amor y respeto por los animales, con el compromiso de contribuir
-            en el futuro a la protección de los perros en situación de calle.
-          </p>
-        </div>
-        <div class="section">
-          <h3>Nuestra Filosofía</h3>
-          <p>
-            Creemos que los paseos son más que caminar: son oportunidades para
-            que tu perro descubra el mundo, fortalezca su confianza y cree lazos
-            con otros perros y personas. Por eso, cada paseo incluye momentos de
-            juego, descanso y exploración guiada.
-          </p>
-          <p>
-            Trabajamos con perros de todas las edades y tamaños, desde cachorros
-            curiosos hasta seniors que prefieren un ritmo más tranquilo. ¡En
-            SinucanTOUR, todos tienen su lugar!
-          </p>
-        </div>
-        <div class="cta">
-          <button class="btn-paw" onclick="updateTab(1)">
-            Conoce nuestros planes
-          </button>
-        </div>
+        <div class="container-quienes">
+    <!-- Historia -->
+    <div class="card-quienes">
+      <i class="fas fa-paw"></i>
+      <h3>Mi Historia</h3>
+      <p>SinucanTOUR nació como un trabajo para ayudarme a pagar mis estudios universitarios en ingeniería de sistemas. Con el tiempo, descubrí que no solo me permitía cubrir mis gastos, sino que también disfrutaba pasar tiempo con los perritos, algo que siempre me ha apasionado.</p>
+      <p>A medida que fui creciendo en este negocio, entendí que podía hacer mucho más que solo paseos. Vi la oportunidad de ayudar a los perritos callejeros a través de mi empresa. Como futuro ingeniero de sistemas, quiero aplicar mis conocimientos para digitalizar y automatizar SinucanTOUR, mejorando el servicio y diferenciándome de la competencia.</p>
+    </div>
+
+    <!-- Por qué elegirnos -->
+    <div class="card-quienes">
+      <i class="fas fa-star"></i>
+      <h3>¿Por qué SinucanTOUR?</h3>
+      <p>Somos un equipo apasionado por los perros, con sede en Montería, dedicado a ofrecer paseos que no solo ejercitan a tu mascota, sino que también enriquecen su vida social y emocional. Con rutas cuidadosamente planeadas y un enfoque en la seguridad, llevamos más de 3 años haciendo felices a los peludos de nuestra comunidad.</p>
+    </div>
+
+    <!-- Visión -->
+    <div class="card-quienes">
+      <i class="fas fa-eye"></i>
+      <h3>Visión</h3>
+      <p>Ser la empresa líder en paseos caninos en Montería y expandirnos a otras ciudades, ofreciendo un servicio confiable, profesional y digitalizado. Buscamos transformar la industria del cuidado canino, generando empleo formal y promoviendo el bienestar animal.</p>
+      <p>A futuro, queremos crear una fundación para rescatar, rehabilitar y dar en adopción a perros callejeros, brindándoles una segunda oportunidad.</p>
+    </div>
+
+    <!-- Misión -->
+    <div class="card-quienes">
+      <i class="fas fa-heart"></i>
+      <h3>Misión</h3>
+      <p>Brindar un servicio de paseos caninos de alta calidad, asegurando el bienestar, seguridad y felicidad de cada perro. Nos diferenciamos por nuestra profesionalización, confianza y el uso de la tecnología para mejorar la experiencia de nuestros clientes.</p>
+      <p>Además, fomentamos el amor y respeto por los animales, con el compromiso de contribuir en el futuro a la protección de los perros en situación de calle.</p>
+    </div>
+
+    <!-- Filosofía -->
+    <div class="card-quienes">
+      <i class="fas fa-globe-americas"></i>
+      <h3>Nuestra Filosofía</h3>
+      <p>Creemos que los paseos son más que caminar: son oportunidades para que tu perro descubra el mundo, fortalezca su confianza y cree lazos con otros perros y personas.</p>
+      <p>Trabajamos con perros de todas las edades y tamaños, desde cachorros curiosos hasta seniors que prefieren un ritmo más tranquilo. ¡En SinucanTOUR, todos tienen su lugar!</p>
+    </div>
+  </div>
+
         <footer>
           <div class="footer-content">
             <h3>SinucanTOUR</h3>
@@ -223,221 +190,163 @@
         </div>
       </section>
 
-      <!-- ================== INICIO SECCIÓN FOOD ================== -->
-      <section id="food" class="tab-content">
-        <div class="section">
-          <h2>Snacks y Helados Naturales para Perros</h2>
-          <p>
-            "Nuestros snacks y helados naturales para perros están hechos con
-            ingredientes frescos, sin azúcares ni conservantes, ideales para
-            cuidar la salud y felicidad de tu peludo. 🐶🥕🍌 Cada bocado es
-            nutritivo, delicioso y perfecto para consentirlo en cualquier
-            momento del día. 🍦🦴❤️"
-          </p>
-        </div>
+  <!-- ================== SECCIÓN FOOD ================== -->
+<section id="food" class="tab-content">
+  <div class="section">
+    <h2>Snacks y Helados Naturales para Perros</h2>
+    <p>Deliciosos, saludables y hechos con amor 🐶🍦. Productos naturales, nutritivos y perfectos para consentir a tu peludo.</p>
+  </div>
 
-        <div class="food-grid">
-          <!-- Producto 1 -->
-          <div class="food-item">
-            <img src="img/helado1.jpeg" alt="Helado de Banano" />
-            <h3>Helado de Banano</h3>
-            <p>100% natural, sin azúcar ni lácteos.</p>
-            <span class="price" data-precio="7000">$7.000</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 2 -->
-          <div class="food-item">
-            <img src="img/galletas1.jpeg" alt="Galletas de Avena & Manzana" />
-            <h3>Galletas de Avena & Manzana</h3>
-            <p>Ricas en fibra, perfectas como premio.</p>
-            <span class="price" data-precio="6000">$6.000</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 3 -->
-          <div class="food-item">
-            <img src="img/helado2.jpg" alt="Helado de Maní" />
-            <h3>Helado de Maní</h3>
-            <p>Con mantequilla de maní natural. ¡Les encanta!</p>
-            <span class="price" data-precio="8000">$8.000</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 4 -->
-          <div class="food-item">
-            <img src="img/galletas2.jpeg" alt="Galletas de Zanahoria" />
-            <h3>Galletas de Zanahoria</h3>
-            <p>Ricas en vitamina A y textura crujiente.</p>
-            <span class="price" data-precio="6500">$6.500</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 5 -->
-          <div class="food-item">
-            <img src="img/helado3.jpeg" alt="Helado de Fresa" />
-            <h3>Helado de Fresa</h3>
-            <p>Natural y refrescante con trozos de fruta.</p>
-            <span class="price" data-precio="7500">$7.500</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 6 -->
-          <div class="food-item">
-            <img src="img/galletas3.jpeg" alt="Galletas de Calabaza" />
-            <h3>Galletas de Calabaza</h3>
-            <p>Suaves y nutritivas, perfectas para cachorros.</p>
-            <span class="price" data-precio="7000">$7.000</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 7 -->
-          <div class="food-item">
-            <img src="img/helado4.jpeg" alt="Helado de Yogur con Frutas" />
-            <h3>Helado de Yogur con Frutas</h3>
-            <p>Refrescante y lleno de probióticos.</p>
-            <span class="price" data-precio="8500">$8.500</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 8 -->
-          <div class="food-item">
-            <img src="img/galletas4.jpeg" alt="Galletas de Coco" />
-            <h3>Galletas de Coco</h3>
-            <p>Deliciosas y con aceite de coco saludable.</p>
-            <span class="price" data-precio="6800">$6.800</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 9 -->
-          <div class="food-item">
-            <img src="img/helado5.jpeg" alt="Helado de Mango" />
-            <h3>Helado de Mango</h3>
-            <p>Refrescante y lleno de vitaminas.</p>
-            <span class="price" data-precio="7800">$7.800</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-
-          <!-- Producto 10 -->
-          <div class="food-item">
-            <img src="img/galletas5.jpeg" alt="Galletas de Espinaca" />
-            <h3>Galletas de Espinaca</h3>
-            <p>Ricas en hierro y proteínas vegetales.</p>
-            <span class="price" data-precio="7200">$7.200</span>
-            <div class="food-options">
-              <select class="cantidad-select"></select>
-              <button class="btn-food" onclick="agregarAlCarrito(this)">
-                Agregar
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Preguntas frecuentes -->
-        <section class="faq">
-          <h3>Preguntas frecuentes</h3>
-          <ul>
-            <li>
-              <strong>¿Los productos necesitan refrigeración?</strong> Sí,
-              especialmente los helados.
-            </li>
-            <li>
-              <strong>¿Hacen entregas a domicilio?</strong> Sí, en toda Montería
-              con costo adicional.
-            </li>
-            <li>
-              <strong>¿Qué formas de pago aceptan?</strong> Nequi y efectivo
-              contra entrega.
-            </li>
-            <li>
-              <strong>¿Los productos son 100% naturales?</strong> Sí, no
-              contienen conservantes.
-            </li>
-            <li>
-              <strong>¿Puedo personalizar mi pedido?</strong> Sí, contáctanos
-              por WhatsApp.
-            </li>
-            <li>
-              <strong>¿Cada cuánto producen?</strong> Preparamos fresco cada
-              semana.
-            </li>
-            <li>
-              <strong>¿Son aptos para perros pequeños?</strong> Sí, tenemos
-              porciones para todos los tamaños.
-            </li>
-          </ul>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer-food">
-          <div class="footer-content">
-            <h3>SinucanFOOD</h3>
-            <p>Snacks y helados naturales para tu peludo.</p>
-            <p>📍 Montería, Córdoba | 📞 +57 323 588 2174</p>
-            <p>✉️ sinucan.oficial@gmail.com</p>
-          </div>
-        </footer>
-      </section>
-
-      <!-- ================== CARRITO FLOTANTE ================== -->
-      <div id="carrito-flotante">
-        <button id="carrito-boton" onclick="toggleCarrito()">
-          🛒 <span id="contador-carrito">0</span>
-        </button>
-        <div id="carrito-contenido">
-          <h3>🛒 Tu Carrito</h3>
-          <ul id="carrito-lista"></ul>
-          <p id="total-pedido">Total: $0</p>
-          <button id="finalizar-pedido" onclick="enviarPedidoWhatsApp()">
-            Finalizar compra
-          </button>
-        </div>
+  <div class="food-grid">
+    <!-- Producto 1 -->
+    <div class="food-item">
+      <img src="img/helado1.jpeg" alt="Helado de banano">
+      <h3>Helado de Banano</h3>
+      <p>100% natural, sin azúcar ni lácteos.</p>
+      <span class="price" data-precio="7000">$7.000</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
       </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="food-item">
+      <img src="img/galletas1.jpeg" alt="Galletas de avena y manzana">
+      <h3>Galletas de Avena & Manzana</h3>
+      <p>Ricas en fibra, perfectas como premio.</p>
+      <span class="price" data-precio="6000">$6.000</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="food-item">
+      <img src="img/helado2.jpg" alt="Helado de maní">
+      <h3>Helado de Maní</h3>
+      <p>Con mantequilla de maní natural. ¡Les encanta!</p>
+      <span class="price" data-precio="8000">$8.000</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="food-item">
+      <img src="img/galletas2.jpeg" alt="Galletas de zanahoria">
+      <h3>Galletas de Zanahoria</h3>
+      <p>Ricas en vitamina A y textura crujiente.</p>
+      <span class="price" data-precio="6500">$6.500</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="food-item">
+      <img src="img/helado3.jpeg" alt="Helado de fresa">
+      <h3>Helado de Fresa</h3>
+      <p>Refrescante y lleno de antioxidantes.</p>
+      <span class="price" data-precio="7500">$7.500</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="food-item">
+      <img src="img/galletas3.jpeg" alt="Galletas de calabaza">
+      <h3>Galletas de Calabaza</h3>
+      <p>Fuente de fibra y vitaminas para tu peludo.</p>
+      <span class="price" data-precio="6200">$6.200</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="food-item">
+      <img src="img/helado5.jpeg" alt="Snacks de pollo deshidratado">
+      <h3>Snacks de Pollo Deshidratado</h3>
+      <p>Alta proteína, sin aditivos.</p>
+      <span class="price" data-precio="9000">$9.000</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="food-item">
+      <img src="img/galletas5.jpeg" alt="Snacks de pescado">
+      <h3>Snacks de Pescado</h3>
+      <p>Omega 3 natural, ideal para su pelaje.</p>
+      <span class="price" data-precio="9500">$9.500</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 9 -->
+    <div class="food-item">
+      <img src="img/helado4.jpeg" alt="Helado de coco">
+      <h3>Helado de Coco</h3>
+      <p>Suave, refrescante y lleno de energía.</p>
+      <span class="price" data-precio="7700">$7.700</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+
+    <!-- Producto 10 -->
+    <div class="food-item">
+      <img src="img/galletas4.jpeg" alt="Galletas de arándanos">
+      <h3>Galletas de Arándanos</h3>
+      <p>Ricas en antioxidantes y perfectas para premiar.</p>
+      <span class="price" data-precio="6800">$6.800</span>
+      <div class="food-options">
+        <select class="cantidad-select"></select>
+        <button class="btn-food" onclick="agregarAlCarrito(this)">Agregar</button>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Preguntas frecuentes -->
+  <section class="faq">
+    <h3>Preguntas frecuentes</h3>
+    <ul>
+      <li><strong>¿Los productos necesitan refrigeración?</strong><br>Sí, especialmente los helados.</li>
+      <li><strong>¿Son aptos para perros pequeños?</strong><br>Sí, tenemos porciones ideales.</li>
+      <li><strong>¿Hacen entregas a domicilio?</strong><br>Sí, en toda Montería con costo adicional.</li>
+      <li><strong>¿Qué formas de pago aceptan?</strong><br>Nequi y efectivo contra entrega.</li>
+      <li><strong>¿Los productos tienen conservantes?</strong><br>No, son 100% naturales.</li>
+      <li><strong>¿Cada cuánto producen?</strong><br>Producimos fresco cada semana.</li>
+      <li><strong>¿Puedo personalizar mi pedido?</strong><br>Sí, contáctanos por WhatsApp.</li>
+    </ul>
+  </section>
+ <!-- Footer de Food -->
+  <footer class="footer-food">
+    <div class="footer-content">
+      <h3>SinucanFOOD</h3>
+      <p>Lo mejor en snacks y helados naturales para tu peludo.</p>
+      <p>📍 Montería, Córdoba | 📞 +57 323 588 2174</p>
+      <p>✉️ sinucan.oficial@gmail.com</p>
+    </div>
+  </footer>
+   
+
+</section>
+
+  
+
       <!-- ================== FIN SECCIÓN FOOD ================== -->
 
       <!-- Sección de Contacto -->
@@ -562,22 +471,30 @@
         </footer>
       </section>
     </main>
-
-    <div class="nav-buttons" id="nav-buttons">
-      <button class="scroll-btn" id="scroll-top" onclick="scrollToTop()">
-        ⬆ Arriba
-      </button>
-      <button class="scroll-btn" id="scroll-bottom" onclick="scrollToBottom()">
-        ⬇ Abajo
-      </button>
-      <button class="tab-btn" id="prev-tab" onclick="prevTab()">
-        ◄ Anterior
-      </button>
-      <button class="tab-btn" id="next-tab" onclick="nextTab()">
-        Siguiente ►
-      </button>
+<div class="nav-buttons" id="nav-buttons">
+    <button class="scroll-btn" id="scroll-top" onclick="scrollToTop()" title="Subir">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="scroll-btn" id="scroll-bottom" onclick="scrollToBottom()" title="Bajar">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+    <button class="tab-btn" id="prev-tab" onclick="prevTab()" title="Anterior">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="tab-btn" id="next-tab" onclick="nextTab()" title="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>
+<!-- Bloque del carrito flotante -->
+  <div id="carrito-flotante">
+    <button id="carrito-boton" onclick="toggleCarrito()">🛒 <span id="contador-carrito">0</span></button>
+    <div id="carrito-contenido">
+      <h3>🛒 Tu Carrito</h3>
+      <ul id="carrito-lista"></ul>
+      <p id="total-pedido">Total: $0</p>
+      <button id="finalizar-pedido" onclick="enviarPedidoWhatsApp()">Finalizar compra</button>
     </div>
-
+  </div>
     <script src="sinucan.js"></script>
   </body>
 </html>
